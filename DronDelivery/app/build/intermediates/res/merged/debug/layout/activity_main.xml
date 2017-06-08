@@ -32,12 +32,12 @@
                 android:id="@+id/StateText"/>
 
             <Button
+                android:id="@+id/state_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="something"
-                android:id="@+id/button"/>
+                android:text="something"/>
         </LinearLayout>
 
         <LinearLayout
@@ -100,7 +100,6 @@
 
             </LinearLayout>
 
-
         </LinearLayout>
 
         <LinearLayout
@@ -136,15 +135,31 @@
                         android:layout_marginBottom="3dp"
                         android:textSize="15dp"/>
 
-                    <EditText
-                        android:id="@+id/editText"
+                    <LinearLayout
+                        android:id="@+id/current_temp_box"
+                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:ems="5"
-                        android:hint="Please input"
-                        android:layout_weight="1"/>
+                        android:layout_height="match_parent">
 
+                        <EditText
+                            android:id="@+id/current_temp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="5"
+                            android:hint="Please input"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/current_temp_button"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:text="OK"
+                            android:textSize="15dp"
+                            android:textAlignment="center"
+                            android:onClick="changeBackground"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
